@@ -28,7 +28,7 @@ function PostDetails() {
   const fetchPost = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/posts/${id}`
+        `https://blog-platform-ywny.onrender.com/${id}`
       );
 
       setPost(response.data);
@@ -63,7 +63,7 @@ function PostDetails() {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/posts/${id}`,
+        `https://blog-platform-ywny.onrender.composts/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

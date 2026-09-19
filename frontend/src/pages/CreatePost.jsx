@@ -18,7 +18,7 @@ function CreatePost() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/posts",
+        "https://blog-platform-ywny.onrender.com",
         {
           title,
           content,

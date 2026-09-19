@@ -30,7 +30,7 @@ function Home() {
   const fetchPosts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/posts"
+        "https://blog-platform-ywny.onrender.com/posts"
       );
 
       setPosts(response.data);

@@ -17,7 +17,7 @@ function EditPost() {
   const fetchPost = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/posts/${id}`
+        `https://blog-platform-ywny.onrender.com/${id}`
       );
 
       setTitle(response.data.title);
@@ -42,7 +42,7 @@ function EditPost() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/posts/${id}`,
+        `https://blog-platform-ywny.onrender.com/${id}`,
         {
           title,
           content,

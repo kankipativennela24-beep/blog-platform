@@ -25,7 +25,7 @@ function CommentSection({ postId }) {
   const fetchComments = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/comments/${postId}`
+        `https://blog-platform-ywny.onrender.com/${postId}`
       );
 
       setComments(response.data);
@@ -59,7 +59,7 @@ function CommentSection({ postId }) {
 
     try {
       await axios.post(
-        `http://localhost:5000/api/comments/${postId}`,
+        `https://blog-platform-ywny.onrender.com/${postId}`,
         {
           comment,
         },
@@ -110,7 +110,7 @@ function CommentSection({ postId }) {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/comments/${commentId}`,
+        `https://blog-platform-ywny.onrender.com/${commentId}`,
         {
           comment: editText,
         },
@@ -159,7 +159,7 @@ function CommentSection({ postId }) {
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/comments/${commentId}`,
+        `https://blog-platform-ywny.onrender.com/${commentId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
