@@ -1,0 +1,533 @@
+/* ================================
+   Search Box
+================================ */
+
+.search-box {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 17px;
+  outline: none;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+/* ================================
+   Profile
+================================ */
+
+.profile-container {
+  width: 90%;
+  max-width: 600px;
+  margin: 60px auto;
+}
+
+.profile-card {
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.profile-icon {
+  font-size: 70px;
+  margin-bottom: 15px;
+}
+
+.profile-card h1 {
+  color: #2563eb;
+  margin-bottom: 30px;
+}
+
+.profile-info {
+  text-align: left;
+}
+
+.profile-info div {
+  background: #f4f7fb;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.profile-info strong {
+  color: #172033;
+}
+
+.profile-info p {
+  margin: 8px 0 0;
+  color: #52627a;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+  color: #172033;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ================================
+   Navbar
+================================ */
+
+.navbar {
+  width: 100%;
+  min-height: 70px;
+  padding: 15px 5%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #172033;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: #2563eb;
+}
+
+.welcome-user {
+  color: #52627a;
+  font-weight: bold;
+}
+
+.logout-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #dc2626;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #b91c1c;
+}
+
+/* ================================
+   Home
+================================ */
+
+.home {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 45px 20px;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  color: #2563eb;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #52627a;
+}
+
+.latest-title {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+/* ================================
+   Post Card
+================================ */
+
+.post-card {
+  background: white;
+  text-align: left;
+  padding: 35px;
+  margin: 25px 0;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.post-card h1,
+.post-card h2 {
+  color: #172033;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.post-card p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #52627a;
+}
+
+.post-card hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 25px 0;
+}
+
+.author {
+  font-weight: bold;
+  color: #334155 !important;
+}
+
+.post-date {
+  color: #64748b !important;
+}
+
+.post-content {
+  white-space: pre-wrap;
+}
+
+/* ================================
+   Buttons
+================================ */
+
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.buttons a,
+.buttons button {
+  display: inline-block;
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons a:hover,
+.buttons button:hover {
+  background: #1d4ed8;
+}
+
+/* ================================
+   Read More
+================================ */
+
+.read-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.read-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ================================
+   Delete Button
+================================ */
+
+.delete-btn {
+  padding: 12px 25px !important;
+  margin: 0;
+  border: none;
+  border-radius: 8px;
+  background: #dc2626 !important;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #b91c1c !important;
+}
+
+/* ================================
+   Forms
+================================ */
+
+.form-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 30px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: #2563eb;
+}
+
+.create-post textarea {
+  min-height: 180px;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.form-container button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: #1d4ed8;
+}
+
+.form-container p {
+  text-align: center;
+  color: #52627a;
+  margin-top: 20px;
+}
+
+.form-container a {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* ================================
+   Empty Posts
+================================ */
+
+.empty-posts {
+  background: white;
+  padding: 40px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   Comments
+================================ */
+
+.comments-section {
+  background: white;
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.comments-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #172033;
+}
+
+.comments-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments-section textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.comments-section textarea:focus {
+  border-color: #2563eb;
+}
+
+.comments-section form button {
+  width: fit-content;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.comments-section form button:hover {
+  background: #1d4ed8;
+}
+
+.comment-card {
+  background: #f4f7fb;
+  padding: 18px;
+  margin-top: 18px;
+  border-radius: 10px;
+  border-left: 4px solid #2563eb;
+}
+
+.comment-card strong {
+  color: #172033;
+  font-size: 16px;
+}
+
+.comment-card p {
+  margin: 8px 0;
+  color: #52627a;
+  line-height: 1.5;
+}
+
+.comment-card small {
+  color: #64748b;
+}
+
+.comment-card textarea {
+  margin-top: 12px;
+  min-height: 80px;
+}
+
+.comment-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.comment-buttons button {
+  width: auto;
+  padding: 8px 14px;
+  font-size: 14px;
+  background: #2563eb;
+}
+
+.comment-buttons button:hover {
+  background: #1d4ed8;
+}
+
+.comment-buttons .comment-delete {
+  background: #dc2626;
+}
+
+.comment-buttons .comment-delete:hover {
+  background: #b91c1c;
+}
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .home {
+    width: 95%;
+    padding: 30px 10px;
+  }
+
+  .post-card {
+    padding: 22px;
+  }
+
+  .form-container {
+    width: 95%;
+    padding: 25px;
+    margin: 30px auto;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons a,
+  .buttons button {
+    text-align: center;
+  }
+}
