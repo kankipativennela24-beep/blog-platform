@@ -11,7 +11,7 @@ function Register() {
 
     try {
       await axios.post(
-        "https://blog-platform-ywny.onrender.comregister",
+        "https://blog-platform-1-pwno.onrender.com/api/auth/register",
         {
           name,
           email,
@@ -24,7 +24,8 @@ function Register() {
       window.location.href = "/login";
     } catch (error) {
       alert(
-        error.response?.data?.message || "Registration failed"
+        error.response?.data?.message ||
+          "Registration failed"
       );
     }
   };
@@ -58,7 +59,9 @@ function Register() {
           required
         />
 
-        <button type="submit">Register</button>
+        <button type="submit">
+          Register
+        </button>
       </form>
 
       <p>
