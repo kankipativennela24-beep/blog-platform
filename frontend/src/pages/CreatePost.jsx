@@ -17,8 +17,8 @@ function CreatePost() {
     }
 
     try {
-      await axios.post(
-        "https://blog-platform-ywny.onrender.com",
+      const response = await axios.post(
+        "https://blog-platform-1-pwno.onrender.com/api/posts",
         {
           title,
           content,
@@ -26,9 +26,12 @@ function CreatePost() {
         {
           headers: {
             Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
           },
         }
       );
+
+      console.log("Post created:", response.data);
 
       alert("Blog post created successfully!");
 
@@ -37,8 +40,16 @@ function CreatePost() {
 
       window.location.href = "/";
     } catch (error) {
+      console.log("CREATE POST ERROR:", error);
+
+      console.log(
+        "Backend response:",
+        error.response?.data
+      );
+
       alert(
         error.response?.data?.message ||
+          error.message ||
           "Failed to create post"
       );
     }
@@ -53,14 +64,18 @@ function CreatePost() {
           type="text"
           placeholder="Enter Blog Title"
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(e) =>
+            setTitle(e.target.value)
+          }
           required
         />
 
         <textarea
           placeholder="Write your blog content..."
           value={content}
-          onChange={(e) => setContent(e.target.value)}
+          onChange={(e) =>
+            setContent(e.target.value)
+          }
           required
         />
 
