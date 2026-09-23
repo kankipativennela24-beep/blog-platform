@@ -10,7 +10,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "https://blog-platform-ywny.onrender.com",
+        "https://blog-platform-1-pwno.onrender.com/api/auth/login",
         {
           email,
           password,
@@ -18,6 +18,7 @@ function Login() {
       );
 
       localStorage.setItem("token", response.data.token);
+
       localStorage.setItem(
         "user",
         JSON.stringify(response.data.user)
@@ -28,7 +29,8 @@ function Login() {
       window.location.href = "/";
     } catch (error) {
       alert(
-        error.response?.data?.message || "Login failed"
+        error.response?.data?.message ||
+          "Login failed"
       );
     }
   };
@@ -42,7 +44,9 @@ function Login() {
           type="email"
           placeholder="Enter Email"
           value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={(e) =>
+            setEmail(e.target.value)
+          }
           required
         />
 
@@ -50,11 +54,15 @@ function Login() {
           type="password"
           placeholder="Enter Password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          onChange={(e) =>
+            setPassword(e.target.value)
+          }
           required
         />
 
-        <button type="submit">Login</button>
+        <button type="submit">
+          Login
+        </button>
       </form>
 
       <p>
